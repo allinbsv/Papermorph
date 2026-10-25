@@ -28,6 +28,8 @@ Every path shares [site.md](references/site.md) (the book folder, cover or serie
 
 **Chinese productions:** When the book's primary language is `zh` or `zh-CN`, also read [zh-humanist.md](references/zh-humanist.md) before writing a script, choosing a voice, or approving a cut. Consult [zh-voice-and-workflow.md](references/zh-voice-and-workflow.md) for verified voice candidates, experimental audition commands and the smallest suitable visualization/workflow option. Start from the optional [Chinese documentary style](assets/templates/zh-humanist/style.json) when the user wants a reflective, human-led explanation. Use `scripts/zh_review.py` for deterministic Chinese narration checks; it never replaces a person's listening and editorial approval.
 
+**Bilingual delivery contract (Chinese / English):** Read [bilingual-delivery.md](references/bilingual-delivery.md) for any Chinese/English humanist production. Preserve both `zh` and `en` as independently selectable outputs, with matching evidence, sincerity, editorial standards, visuals and QA—but write and voice each language naturally, rather than translating word-for-word. **Before releasing a new deliverable, explicitly ask the user “这次要输出中文版还是英文版？/ Chinese or English for this release?”** unless they have already explicitly answered for that exact deliverable. Never infer their choice from chat language or silently default to Chinese. Record the answer and run `scripts/delivery_language_gate.py` for the intended artifact; when the gate blocks, only share draft/status, not a claimed finished deliverable. If the user expressly requests both versions, make two independently checked artifacts.
+
 ## Project layout
 
 ```

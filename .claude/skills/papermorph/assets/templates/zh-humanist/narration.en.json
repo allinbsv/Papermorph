@@ -1,0 +1,11 @@
+{
+  "engine": "edge",
+  "voice": "en-US-GuyNeural",
+  "rate": "-10%",
+  "beats": {
+    "open": "[[lamp]]One night, a lamp went dark. Someone said it had burned out. Maybe. But the bulb might be fine.",
+    "question": "[[switch]]A loose switch, a broken wire, or a power cut down the street can look exactly the same from this room.",
+    "thought": "[[uncertainty]]All we've seen is a light go out. To understand why, we have to look a little closer, one thing at a time.",
+    "close": "[[honesty]]There is nothing shameful about not knowing yet. That's where finding out begins."
+  }
+}

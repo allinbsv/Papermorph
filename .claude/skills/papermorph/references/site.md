@@ -128,7 +128,7 @@ Open `http://localhost:8765/<book>/`. Confirm the cover opens the contents, read
 
 ## Languages
 
-Narration and on-screen text are written in one language first. A second language comes after the book is done and approved: keep beat ids and question ids stable, add `narration.<lang>.json` and audio per language, and decide with the user how switching behaves mid-lesson before building it.
+English and Chinese are both supported **delivery choices**, regardless of which one is authored first. Before delivering a new output, apply [the per-artifact user language choice](bilingual-delivery.md), and check it with `scripts/delivery_language_gate.py`; do not silently inherit `style.json.book.language`. Keep beat ids and question ids stable across the versions, with language-specific `narration.<lang>.json`, independent voice generation, subtitles and audio/timings per language. For a self-contained export, use a distinct output directory per language and validate `<html lang>`, `CHAPTER.language` and all visible text. A runtime mid-lesson switch is separate work requiring user agreement and replay/progress testing; do not imply it is implemented merely because two language assets exist.
 
 ## Video export (optional)
 

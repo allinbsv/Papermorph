@@ -31,6 +31,26 @@
     "rate": "-10%",
     "approved_by_listening": false
   },
+  "delivery": {
+    "supported_languages": ["zh", "en"],
+    "selection": {
+      "language": null,
+      "for_artifact": null,
+      "confirmed_by_user": false,
+      "source": null
+    },
+    "voices_by_language": {
+      "zh": {"engine": "edge", "voice": "zh-CN-YunxiNeural", "rate": "-10%", "approved_by_listening": false},
+      "en": {"engine": "edge", "voice": "en-US-GuyNeural", "rate": "-10%", "approved_by_listening": false}
+    },
+    "parity": {
+      "fact_check": true,
+      "human_script_review": true,
+      "human_voice_review": true,
+      "visual_and_subtitle_review": true,
+      "actual_audio_sync_review": true
+    }
+  },
   "voice_trials": [
     {
       "provider": "edge",
