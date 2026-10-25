@@ -50,6 +50,8 @@ Then start the book folder ([site.md](site.md#start-a-book-folder)): the look is
 
 Which model does which step is the user's choice. Users run the Skill with different models and providers, and a book can mix them. Show the defaults for the chosen tier as one table, one row per step in [team.md](team.md#steps), and ask: keep it (recommended), or change some rows. Any model the user names is fine.
 
+For work on ChatGPT or Claude, also apply the mandatory [token routing and metered-cost gate](token-routing.md): use only models actually available to the user, keep extraction deterministic where possible, avoid repeatedly sending the entire book to multiple workers, and do not turn a model choice into unapproved paid API usage. If the platform cannot switch models automatically, execute the planned stages in the available model and disclose that limitation.
+
 | Step | Tier 1 | Tier 2 | Picture book | Documentary |
 |---|---|---|---|---|
 | Extract the chapter (or the story) | small | small | strong (script and storyboard with the user) | strong (research, script and storyboard with the user; then voice and music) |
@@ -78,6 +80,7 @@ Start from [the template](../assets/templates/style.json). Blocks are grouped by
 | `components` | shared elements: name, file, what each does | tier 2, tier 1 when the book has some |
 | `images` | where images may come from, credit rules | tier 2 |
 | `models` | the model for each step, as agreed in §5 | all |
+| `token_policy` | context/token controls and explicit authorization gate for pay-per-use AI calls | projects using ChatGPT/Claude |
 | `illustration` | a picture book's look, budget, cast and sets ([stories.md](stories.md#intake-for-a-story)) | picture books |
 | `courses` | the course options chosen ([courses.md](courses.md)) | when chosen |
 | `approved` | chapters the user approved and what each shows well | filled as chapters are approved |

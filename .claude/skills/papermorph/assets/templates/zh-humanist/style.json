@@ -85,6 +85,20 @@
     "human_final_cut_approved": false
   },
   "engine": {"source": "DozenTwelve/Papermorph", "ref": "engine-v2.2"},
+  "token_policy": {
+    "platforms": ["ChatGPT", "Claude"],
+    "access_mode": "existing_subscriptions_only",
+    "metered_api": {
+      "authorized": false,
+      "approved_scope": null,
+      "approved_by_user_source": null,
+      "budget_usd": null
+    },
+    "monthly_token_ceiling": null,
+    "context_strategy": "targeted_excerpts_deduplicate_cache_with_source_revision",
+    "routing_strategy": "small_or_code_first_strong_only_for_complex_or_independent_review",
+    "usage_record": "record_measured_input_output_tokens_when_available_else_UNKNOWN"
+  },
   "models": {},
   "approved": []
 }
