@@ -1,0 +1,4 @@
+interface:
+  display_name: "故事视频制作与验收"
+  short_description: "复用Papermorph流程并严格验证配音、字幕和720P/1080P一致性"
+  default_prompt: "Use $story-video-quality-gate to create and validate a bilingual story animation with source-complete audio and release gates."

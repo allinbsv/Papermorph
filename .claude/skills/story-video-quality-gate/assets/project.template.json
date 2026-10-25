@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example-story-only",
+  "version": "v0.1",
+  "selected_language": null,
+  "language_selection_evidence_ref": null,
+  "story_and_voice_style_ref": null,
+  "duration_range_s": [120, 180],
+  "expected_caption_count": null,
+  "files": {
+    "mobile_720p": null,
+    "master_1080p": null,
+    "subtitles_srt": null
+  },
+  "source_split_groups": [
+    {
+      "source": "cache/example-narration.wav",
+      "segments": [
+        {"start_s": 0.0, "end_s": null, "tempo": 1.0,
+         "transformed_clip": "rendered/example-narration-complete.wav"}
+      ]
+    }
+  ],
+  "human_evidence": {
+    "line_by_line_content": {"status": "PENDING", "evidence_ref": null},
+    "voice_and_visual_style": {"status": "PENDING", "evidence_ref": null},
+    "mobile_720p": {"status": "PENDING", "evidence_ref": null, "sha256": null},
+    "master_1080p": {"status": "PENDING", "evidence_ref": null, "sha256": null}
+  },
+  "public_release": {"authorized": false, "evidence_ref": null},
+  "metered_api_budget": {"approved": false, "currency": null, "amount": null},
+  "model_token_usage": {"Tin": "UNKNOWN", "Tout": "UNKNOWN", "Ttotal": "UNKNOWN"}
+}
