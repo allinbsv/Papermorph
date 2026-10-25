@@ -31,6 +31,28 @@
     "rate": "-10%",
     "approved_by_listening": false
   },
+  "voice_trials": [
+    {
+      "provider": "edge",
+      "voice": "zh-CN-YunxiNeural",
+      "status": "not_listened",
+      "role": "baseline; online synthesis, not verified in this environment"
+    },
+    {
+      "provider": "qwen3-tts-local",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "speaker": "Uncle_Fu",
+      "status": "not_downloaded_or_listened",
+      "role": "optional expressive Mandarin audition; no timing integration yet"
+    },
+    {
+      "provider": "qwen3-tts-local",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "speaker": "Serena",
+      "status": "not_downloaded_or_listened",
+      "role": "optional gentle Mandarin comparison; no timing integration yet"
+    }
+  ],
   "pacing": {
     "minutes": 2,
     "turns": "先交付一段完整的两分钟试听与动画，按人的实际听感调整节奏"
