@@ -26,6 +26,8 @@ What the picture should be depends on the book and on the user, so the work star
 
 Every path shares [site.md](references/site.md) (the book folder, cover or series page, preview, video export), [engine.md](references/engine.md) (the player and drawing API), [team.md](references/team.md) (making chapters with subagents) and the models step of [intake.md](references/intake.md#5-models). Read only the reference the current step needs.
 
+**Chinese productions:** When the book's primary language is `zh` or `zh-CN`, also read [zh-humanist.md](references/zh-humanist.md) before writing a script, choosing a voice, or approving a cut. Start from the optional [Chinese documentary style](assets/templates/zh-humanist/style.json) when the user wants a reflective, human-led explanation. Use `scripts/zh_review.py` for deterministic Chinese narration checks; it never replaces a person's listening and editorial approval.
+
 ## Project layout
 
 ```

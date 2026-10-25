@@ -141,6 +141,12 @@ def split_marks(raw):
     return "".join(clean), marks
 
 
+def is_foreign_voice(voice, narration_file):
+    """A region-specific voice is not foreign to the same primary language."""
+    primary = Path(narration_file).stem.split(".")[-1].split("-")[0].lower()
+    return "-" in voice and voice.split("-")[0].lower() != primary
+
+
 def time_at(clean, words, estimate=False):
     """Return f(pos): start time of the first spoken word at or after char pos. The voice's word list can stop
     short of the text; with estimate, a position past its last word is timed at the speaking rate so far (seconds
@@ -258,7 +264,7 @@ async def main(src, out_dir):
                      "marks": mark_times(clean, marks, words), "cues": [[0, sub]] if sub else caption_cues(clean, words)}
             # a line in another language than the book's (its voice's locale differs): the page shows its subtitle even
             # with captions off, as films do with foreign dialogue
-            if sub and "-" in voice and voice.split("-")[0].lower() != Path(src).stem.split(".")[-1].lower():
+            if sub and is_foreign_voice(voice, src):
                 entry["forced"] = True
             if tmp:
                 tmp.replace(mp3)

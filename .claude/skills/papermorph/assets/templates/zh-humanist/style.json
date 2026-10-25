@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "tier": "documentary",
+  "book": {
+    "title": "中文作品标题（待定）",
+    "slug": "zh-humanist-pilot",
+    "language": "zh",
+    "readers": "有好奇心的中文普通读者",
+    "pilot": "ch01"
+  },
+  "words": [
+    "尽管是 AI 制作，过程中要有人的调性，实现人的真挚，不能有 AI 味，真的是过去的那些大师级老头那样，给我们返璞归真，解释万物"
+  ],
+  "angle": "从一件平常小事开始，把背后的机制说清楚，并诚实保留未知；具体题目由用户确定",
+  "look": {
+    "palette": {
+      "ground": "#242a25",
+      "ink": "#eee5d1",
+      "captions": "#e0d4bb",
+      "accent": "#c4a676"
+    },
+    "fonts": {
+      "key words": "Noto Sans CJK SC, Source Han Sans SC, sans-serif",
+      "quotes and captions": "Noto Serif CJK SC, Source Han Serif SC, Songti SC, serif"
+    },
+    "pictures": "简朴、克制，优先使用有来源的实物图、老照片和帮助理解机制的手绘示意"
+  },
+  "voice": {
+    "engine": "edge",
+    "voice": "zh-CN-YunxiNeural",
+    "rate": "-10%",
+    "approved_by_listening": false
+  },
+  "pacing": {
+    "minutes": 2,
+    "turns": "先交付一段完整的两分钟试听与动画，按人的实际听感调整节奏"
+  },
+  "editorial": {
+    "character": "诚恳、谦逊、温暖、有生活经验的原创讲述者",
+    "principles": ["具体而不空泛", "分清事实和推断", "用留白代替煽情", "尊重听众的判断"],
+    "human_script_approved": false,
+    "human_voice_approved": false,
+    "human_final_cut_approved": false
+  },
+  "engine": {"source": "DozenTwelve/Papermorph", "ref": "engine-v2.2"},
+  "models": {},
+  "approved": []
+}

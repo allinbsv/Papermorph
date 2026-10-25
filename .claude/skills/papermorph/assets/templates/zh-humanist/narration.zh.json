@@ -1,0 +1,11 @@
+{
+  "engine": "edge",
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-10%",
+  "beats": {
+    "open": "[[lamp]]夜里，一盏灯忽然灭了。有人说，灯坏了。可灯泡也许没有坏。",
+    "question": "[[switch]]开关松了，电线断了，或者整栋楼停了电，看上去都是同一个结果。",
+    "thought": "[[uncertainty]]我们看见的，只是灯灭了。至于为什么，还得一步一步去找。",
+    "close": "[[honesty]]肯承认自己暂时不知道，是弄明白一件事的开始。"
+  }
+}
